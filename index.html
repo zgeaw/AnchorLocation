@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>锚点定位__插件</title>		
+		<script src="jquery.min.js"></script>
+		<script src="AnchorLocation.js"></script>
+		<style>
+			body{font-family: "microsoft yahei"; font-size: 13px; color: #333; margin: 0 auto;}
+			.wrap{ width: 1200px; margin: 0 auto; height: 1500px;}
+			.nav { background: #333; width: 1200px;}
+			.nav a{ display: inline-block; height: 40px; line-height: 40px; color: #fff; text-decoration: none; padding: 0 30px;}
+			.nav a.active,
+			.nav a:hover{ background: #f60;}
+			
+			.nav-fixed{ position: fixed; top: 0;}
+			h1,h2{ margin: 0; padding: 15px 0;}
+			h3,h4{ margin: 0; padding: 10px 0;}
+			.f66{color: #666; font-weight: normal;}.f99{color: #999; font-weight: normal;}
+		</style>
+		<script>
+			$(function(){
+				//锚点定位
+				AnchorLocation('.nav',1);
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<p class="nav nav-fixed">
+				<a href="#home" class="active">首页</a>
+				<a href="#about">关于我们</a>
+				<a href="#content">联系我们</a>
+				<a href="#product">产品中心</a>
+			</p>			
+			<h1 style="padding-top:80px;">这是一个插件</h1>
+			<h2 style="height: 150px;">固定位置导航</h2>		
+			
+			<h3 class="f66"><a id="home"></a>首页</h3>
+			<h4 class="f99" style="height: 500px;">This is a dynamic page and its contents is contributed by product plug-in</h4>
+			
+			<h3 class="f66"><a id="about"></a>关于我们</h3>
+			<h4 class="f99" style="height: 500px;">This is a dynamic page and its contents is contributed by product plug-in</h4>
+			
+			<h3 class="f66"><a id="content"></a>联系我们</h3>
+			<h4 class="f99" style="height: 500px;">This is a dynamic page and its contents is contributed by product plug-in</h4>
+			
+			<h3 class="f66"><a id="product"></a>产品中心</h3>
+			<h4 class="f99" style="height: 1000px;">This is a dynamic page and its contents is contributed by product plug-in</h4>
+		</div>
+		<!-- 作者：32237384@qq.com -->
+	</body>
+</html>
